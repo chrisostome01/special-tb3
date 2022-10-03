@@ -53,6 +53,11 @@ body {
     @apply bg-primary-500 text-white rounded-[12px]
 }
 
+.button--outline-dark {
+    @apply rounded-[12px];
+    border: 1px solid rgb(194, 191, 191)
+}
+
 .button--size-small {
     @apply w-[200px]
 }
@@ -64,11 +69,11 @@ body {
 }
 
 .section-header__title {
-    @apply font-bold 
+    @apply font-bold w-full 
 }
 
 .section-header__text {
-    @apply font-normal text-[18px] leading-[27px];
+    @apply font-normal text-[18px] leading-[27px] w-full;
 }
 
 .section-header__higlight {
@@ -88,7 +93,7 @@ body {
 }
 
 .section-header--posistion-left {
-    @apply text-left
+    text-align:  left;
 }
 /* =========== Start: section-header ============ */
 
@@ -96,6 +101,19 @@ body {
 .input-group {
    @apply bg-white py-2 pl-6 rounded-[12px] flex justify-between w-[600px]    
 }
+
+.input-group--bg-gray {
+    @apply bg-light-violet;
+}
+
+.input-group--size-small {
+    @apply w-[300px]
+}
+
+.button--bg-default {
+    @apply bg-transparent
+}
+
 .input {
     outline: none;
     @apply placeholder:text-[#1D2130] outline-none placeholder:opacity-[0.4] placeholder:text-[16px]
@@ -141,6 +159,10 @@ body {
 
 .quality__sub-title {
     @apply font-normal text-primary-500 text-[16px] opacity-[0.87]
+}
+
+.quality__title--size-small {
+    @apply text-[24px]
 }
 /* ============== end: quality section ========== */
 
@@ -256,3 +278,12 @@ body {
     @apply w-[400px]
 }
 /* ============== end: social links ========== */
+
+/* ================== project page  ========== */
+
+.project-feature {
+    @apply mt-[5rem] bg-white grid grid-cols-3 gap-9 p-12 w-[90%];
+    border-top-right-radius: 30px;
+}
+
+
