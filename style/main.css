@@ -11,7 +11,17 @@ body {
 }
 
 
-@import url("./home.css");
+@import "./home.css";
+
+/* ============ Start: custom colors =================== */
+
+/* gradient */
+.gradient--green-white {
+    @apply bg-gradient-to-r   from-[#b9ecbe8d] via-[#d4d7ef60] to-[#ffffff];
+}
+/*  */
+
+/* ============== End: custom colors =================== */
 
 
 /* =============== Start: header ============= */
@@ -54,8 +64,7 @@ body {
 }
 
 .button--outline-dark {
-    @apply rounded-[12px];
-    border: 1px solid rgb(194, 191, 191)
+    @apply rounded-[12px] border border-[#c2bfbf];
 }
 
 .button--size-small {
@@ -77,8 +86,7 @@ body {
 }
 
 .section-header__higlight {
-    @apply font-bold text-[24px] w-full;
-    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    @apply font-bold text-[24px] w-full bg-gradient-to-r from-[#373FFF]  to-[#3ACAF8];
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     background-clip: text;
@@ -115,14 +123,13 @@ body {
 }
 
 .input {
-    outline: none;
-    @apply placeholder:text-[#1D2130] outline-none placeholder:opacity-[0.4] placeholder:text-[16px]
+    @apply placeholder:text-[#1D2130] outline-none placeholder:opacity-[0.4] placeholder:text-[16px];
 }
 /* =========== End: inputs ====================== */
 
 /* =========== Start: Brnads ====================== */
 .brands {
-    @apply flex justify-between z-40 px-16 pt-6 bg-white
+    @apply flex justify-between z-40 px-16;
 }
 /* =========== End: Brands ====================== */
 
@@ -132,7 +139,7 @@ body {
 }
 
 .solution__container {
-    @apply p-9 rounded-[24px] mt-6 grid grid-cols-3;
+    @apply p-9 rounded-[24px] mt-6 grid grid-cols-3 ;
 }
 
 .solution__container--bg-primary {
@@ -146,7 +153,7 @@ body {
 
 /* ============= start: quality section ========= */
 .quality {
-    @apply flex flex-col gap-4;
+    @apply flex flex-col gap-4 mt-[2rem];
 }
 
 .quality__icon {
@@ -168,7 +175,7 @@ body {
 
 /* ============== Start: scale ================== */
 .scale {
-    @apply grid grid-cols-2 items-center mx-16 gap-3 my-[12rem];
+    @apply grid grid-cols-2 items-center mx-16 gap-3 my-[4rem];
 }
 /* ============== Start: scale ================== */
 
@@ -194,19 +201,22 @@ body {
 }
 
 .scale-card__image {
-    @apply w-[450px] h-[400px] float-right
+    @apply w-[450px] h-[400px] float-right mt-4;
 }
 /* ========== End: scale-card ==================== */
 
 /* ========== start: gridient-card =============== */
 .gridient-card {
-    @apply w-full min-h-full relative mt-[2rem];
+    @apply w-full min-h-full relative mt-[2rem] bg-gradient-to-r  gradient--green-white;
+}
+
+.gradient {
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+    filter: blur(98px);
 }
 
 .gridient-card__gradient {
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-    filter: blur(98px);
-    @apply w-full h-full absolute -z-20 top-10;  
+    @apply w-full h-full absolute -z-20 top-10  gradient;  
 }
 /* ============ end: gridient-card =============== */
 
@@ -220,9 +230,7 @@ body {
 }
 
 .card {
-    @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded;
-    border: 2px solid rgba(97, 153, 237, 0.26);
-    border-radius: 24px;
+    @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded-[24px] border;
 }
 
 .card__title {
@@ -279,11 +287,16 @@ body {
 }
 /* ============== end: social links ========== */
 
+
 /* ================== project page  ========== */
 
-.project-feature {
-    @apply mt-[5rem] bg-white grid grid-cols-3 gap-9 p-12 w-[90%];
+
+.round-right-top {
     border-top-right-radius: 30px;
+}
+
+.project-feature {
+    @apply mt-[5rem] bg-white grid grid-cols-3 gap-9 p-12 w-[90%] round-right-top;
 }
 
 
