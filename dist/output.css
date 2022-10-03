@@ -615,12 +615,12 @@ video {
   cursor: pointer;
 }
 
-.grid-cols-2 {
-  grid-template-columns: repeat(2, minmax(0, 1fr));
-}
-
 .grid-cols-3 {
   grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.grid-cols-2 {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 .flex-col {
@@ -893,7 +893,9 @@ body {
 
 .button--outline-dark {
   border-radius: 12px;
-  border: 1px solid rgb(194, 191, 191);
+  border-width: 1px;
+  --tw-border-opacity: 1;
+  border-color: rgb(194 191 191 / var(--tw-border-opacity));
 }
 
 .button--size-small {
@@ -927,9 +929,13 @@ body {
 
 .section-header__higlight {
   width: 100%;
+  background-image: linear-gradient(to right, var(--tw-gradient-stops));
+  --tw-gradient-from: #373FFF;
+  --tw-gradient-to: rgb(55 63 255 / 0);
+  --tw-gradient-stops: var(--tw-gradient-from), var(--tw-gradient-to);
+  --tw-gradient-to: #3ACAF8;
   font-size: 24px;
   font-weight: 700;
-  background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   background-clip: text;
@@ -979,9 +985,8 @@ body {
 }
 
 .input {
-  outline: none;
   outline: 2px solid transparent;
-  outline-offset: 2px
+  outline-offset: 2px;
 }
 
 .input::-moz-placeholder {
@@ -1144,14 +1149,19 @@ body {
   width: 100%;
 }
 
-.gridient-card__gradient {
+.gradient {
   background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
   filter: blur(98px);
+}
+
+.gridient-card__gradient {
   position: absolute;
   top: 2.5rem;
   z-index: -20;
   height: 100%;
   width: 100%;
+  background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+  filter: blur(98px);
 }
 
 /* ============ end: gridient-card =============== */
@@ -1177,11 +1187,10 @@ body {
   align-items: center;
   justify-content: center;
   gap: 1rem;
-  border-radius: 0.25rem;
+  border-radius: 24px;
+  border-width: 1px;
   padding: 1.25rem;
   text-align: center;
-  border: 2px solid rgba(97, 153, 237, 0.26);
-  border-radius: 24px;
 }
 
 .card__title {
@@ -1274,6 +1283,10 @@ body {
 
 /* ================== project page  ========== */
 
+.round-right {
+  border-top-right-radius: 30px;
+}
+
 .project-feature {
   margin-top: 5rem;
   display: grid;
@@ -1283,7 +1296,6 @@ body {
   --tw-bg-opacity: 1;
   background-color: rgb(255 255 255 / var(--tw-bg-opacity));
   padding: 3rem;
-  border-top-right-radius: 30px;
 }
 
 
