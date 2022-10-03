@@ -1,10 +1,10 @@
 {
   "name": "special-tb3",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fin sweet",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "generate": "npx tailwindcss -c ./tailwind.config.js -i ./style/main.css -o ./dist/output.css --watch"
   },
   "repository": {
     "type": "git",

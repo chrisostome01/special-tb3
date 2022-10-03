@@ -1,0 +1,258 @@
+@tailwind base;
+@tailwind utilities;
+@tailwind components;
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+* {
+    font-family: 'Roboto', sans-serif;
+}
+body {
+    background: #FFFFFF;
+}
+
+
+@import url("./home.css");
+
+
+/* =============== Start: header ============= */
+.header {
+    @apply mx-16 my-9 flex flex-col gap-20
+}
+
+.header__nav {
+    @apply flex justify-between 
+}
+
+.header__content {
+    @apply relative flex flex-col items-center justify-center gap-12 px-28;
+}
+
+.header__gradient {
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+    filter: blur(200px);
+    @apply  rounded-full w-[524px] h-[496px] absolute -z-30 left-9 top-11
+}
+/* ================= End: header ============= */
+
+/* ============= Start: navigation =========== */
+.navigation {
+    @apply flex gap-4 items-center;
+}
+
+.navigation__item {
+    @apply text-[16px] font-roboto font-normal leading-[24px];
+}
+/* ================= End: navigation =========== */
+
+/* =============== Start: Button =============== */
+.buttom {
+    @apply px-6 py-3 font-bold
+}
+
+.button--bg-dark {
+    @apply bg-primary-500 text-white rounded-[12px]
+}
+
+.button--size-small {
+    @apply w-[200px]
+}
+/* ================= End: Button =============== */
+
+/* =========== Start: section-header ============ */
+.section-header {
+    @apply text-center flex flex-col justify-center items-center gap-4;
+}
+
+.section-header__title {
+    @apply font-bold 
+}
+
+.section-header__text {
+    @apply font-normal text-[18px] leading-[27px];
+}
+
+.section-header__higlight {
+    @apply font-bold text-[24px] w-full;
+    background: linear-gradient(53.94deg, #373FFF 15.02%, #3ACAF8 82.83%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.section-header__title--size-large {
+    @apply text-[56px] leading-[61.6px]
+}
+
+.section-header__title--size-small {
+    @apply text-[48px]  leading-[57.6px]
+}
+
+.section-header--posistion-left {
+    @apply text-left
+}
+/* =========== Start: section-header ============ */
+
+/* =========== Start: inputs ==================== */
+.input-group {
+   @apply bg-white py-2 pl-6 rounded-[12px] flex justify-between w-[600px]    
+}
+.input {
+    outline: none;
+    @apply placeholder:text-[#1D2130] outline-none placeholder:opacity-[0.4] placeholder:text-[16px]
+}
+/* =========== End: inputs ====================== */
+
+/* =========== Start: Brnads ====================== */
+.brands {
+    @apply flex justify-between z-40 px-16 pt-6 bg-white
+}
+/* =========== End: Brands ====================== */
+
+/* =========== Start: solution card ============= */
+.solution {
+    @apply mt-[6rem] mx-16 my-9;
+}
+
+.solution__container {
+    @apply p-9 rounded-[24px] mt-6 grid grid-cols-3;
+}
+
+.solution__container--bg-primary {
+    @apply bg-light-violet
+}
+
+.solution__container--bg-secondary {
+    @apply bg-light-pink
+}
+/* ============= End: solution card ============= */
+
+/* ============= start: quality section ========= */
+.quality {
+    @apply flex flex-col gap-4;
+}
+
+.quality__icon {
+    @apply w-[48px] h-[48px]
+}
+
+.quality__title {
+    @apply text-[32px] font-bold text-primary-500 leading-[38.4px];
+}
+
+.quality__sub-title {
+    @apply font-normal text-primary-500 text-[16px] opacity-[0.87]
+}
+/* ============== end: quality section ========== */
+
+/* ============== Start: scale ================== */
+.scale {
+    @apply grid grid-cols-2 items-center mx-16 gap-3 my-[12rem];
+}
+/* ============== Start: scale ================== */
+
+/* ========= start: scale-card ================== */
+.scale-card {
+    @apply flex flex-col gap-7
+}
+
+.scale-card__item {
+    @apply flex gap-3 flex-col
+}
+
+.scale-card__title {
+    @apply text-primary-500 text-[24px] leading-[33.6px] font-bold
+}
+
+.scale-card__body {
+    @apply flex gap-3 items-center 
+}
+
+.scale-card__text {
+    @apply text-primary-500 text-[16px]
+}
+
+.scale-card__image {
+    @apply w-[450px] h-[400px] float-right
+}
+/* ========== End: scale-card ==================== */
+
+/* ========== start: gridient-card =============== */
+.gridient-card {
+    @apply w-full min-h-full relative mt-[2rem];
+}
+
+.gridient-card__gradient {
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+    filter: blur(98px);
+    @apply w-full h-full absolute -z-20 top-10;  
+}
+/* ============ end: gridient-card =============== */
+
+/* ============ start: testomny  ================= */
+.testimony {
+    @apply mx-16;
+}
+
+.user-card {
+    @apply grid grid-cols-3 gap-4 my-[8rem]
+}
+
+.card {
+    @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded;
+    border: 2px solid rgba(97, 153, 237, 0.26);
+    border-radius: 24px;
+}
+
+.card__title {
+    @apply text-[12px] font-normal;
+}
+
+.card__main-text {
+    @apply font-medium text-[20px] text-primary-500
+}
+/* ============ end: testomny  ================= */
+
+/* ============ start: footer ================== */
+.footer {
+    @apply w-full mt-[3rem];
+}
+
+.footer__redirect {
+    @apply grid grid-cols-4 mx-16 py-16;
+}
+
+.footer__body--dark {
+    @apply bg-primary-500 text-white mt-[3rem];
+}
+
+.footer__navigation {
+    @apply flex flex-col gap-4;
+}
+
+.footer__links {
+    @apply opacity-[0.6] text-[16px]
+}
+
+.footer__links-header {
+    @apply font-semibold text-[18px] leading-[150%]
+}
+
+/* ============== end: footer ================== */
+
+/* ============== start: social links ========== */
+.footer__social-links {
+    @apply flex mx-16 py-4;
+}
+
+.social-links {
+    @apply flex gap-2 px-3 justify-between
+}
+
+.copylight {
+    @apply opacity-[0.5] text-[12px] leading-[18px] font-normal
+}
+
+.line {
+    @apply w-[400px]
+}
+/* ============== end: social links ========== */
