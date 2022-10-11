@@ -13,36 +13,20 @@ body {
 
 @import "./home.css";
 
-/* ============ Start: custom colors =================== */
+/* ============ Start: custom colors ========== */
 
 /* gradient */
-.gradient--green-white {
-    @apply bg-gradient-to-r   from-[#b9ecbe8d] via-[#d4d7ef60] to-[#ffffff];
-}
-/*  */
-
-/* ============== End: custom colors =================== */
-
-
-/* =============== Start: header ============= */
-.header {
-    @apply mx-16 my-9 flex flex-col gap-20
+.gradient-green-white {
+    @apply  from-green-50 via-purple-50 to-blue-100;
 }
 
-.header__nav {
-    @apply flex justify-between 
+
+/* sapcing  */
+.spacing-normal {
+    @apply mt-[7rem]
 }
 
-.header__content {
-    @apply relative flex flex-col items-center justify-center gap-12 px-28;
-}
-
-.header__gradient {
-    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-    filter: blur(200px);
-    @apply  rounded-full w-[524px] h-[496px] absolute -z-30 left-9 top-11
-}
-/* ================= End: header ============= */
+/* ============== End: custom colors ========= */
 
 /* ============= Start: navigation =========== */
 .navigation {
@@ -54,8 +38,39 @@ body {
 }
 /* ================= End: navigation =========== */
 
+/* =============== Start: header =============== */
+.header {
+    @apply mx-16 my-9 flex flex-col gap-20
+}
+
+.header__links {
+    @apply flex justify-between 
+}
+
+.header__content {
+    @apply relative flex flex-col items-center justify-center gap-12 px-28;
+}
+
+.header__gradient {
+    background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #9bffa573 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
+    filter: blur(200px);
+    @apply  rounded-full w-[524px] h-[496px] absolute -z-30 left-9 top-11
+}
+
+.header__navigation {
+    @apply navigation;
+}
+
+.header__navigation-item {
+    @apply navigation__item;
+}
+
+/* ================= End: header ============= */
+
+
+
 /* =============== Start: Button =============== */
-.buttom {
+.button {
     @apply px-6 py-3 font-bold
 }
 
@@ -138,8 +153,28 @@ body {
     @apply mt-[6rem] mx-16 my-9;
 }
 
+.solution__header {
+    @apply section-header;
+}
+
+.solution__higlight {
+    @apply section-header__higlight
+}
+
+.solution__header-title {
+    @apply section-header__title;
+}
+
+.solution__header-title--size-small {
+    @apply  section-header__title--size-small
+}
+
 .solution__container {
     @apply p-9 rounded-[24px] mt-6 grid grid-cols-3 ;
+}
+
+.solution__title {
+    @apply section-header__title section-header__title--size-small
 }
 
 .solution__container--bg-primary {
@@ -149,11 +184,28 @@ body {
 .solution__container--bg-secondary {
     @apply bg-light-pink
 }
+
+.solution__quality {
+    @apply quality
+}
+
+.solution__quality-icon {
+    @apply quality__icon;
+}
+
+.solition__quality-title {
+    @apply quality__title;
+}
+
+.solition__description {
+    @apply quality__sub-title;
+}
+
 /* ============= End: solution card ============= */
 
 /* ============= start: quality section ========= */
 .quality {
-    @apply flex flex-col gap-4 mt-[2rem];
+    @apply flex flex-col gap-4 mt-[2rem] px-3 justify-between;
 }
 
 .quality__icon {
@@ -162,6 +214,10 @@ body {
 
 .quality__title {
     @apply text-[32px] font-bold text-primary-500 leading-[38.4px];
+}
+
+.quality--middle {
+    @apply border-r-2 border-l-2 mx-4
 }
 
 .quality__sub-title {
@@ -176,6 +232,46 @@ body {
 /* ============== Start: scale ================== */
 .scale {
     @apply grid grid-cols-2 items-center mx-16 gap-3 my-[4rem];
+}
+
+.scale--gradient {
+    @apply gridient-card mx-0 px-16;
+}
+
+.scale__card {
+    @apply scale-card;
+}
+
+.scale__card-text {
+    @apply scale-card__text;
+}
+
+.scale__header {
+    @apply section-header
+}
+
+.scale__higlight {
+    @apply section-header__higlight
+}
+
+.scale__header-text {
+    @apply section-header__title section-header__title--size-small
+}
+
+.scale__header--posistion-left {
+    @apply section-header--posistion-left
+}
+
+.scale__card-item {
+    @apply scale-card__item;
+}
+
+.scale__card-image {
+    @apply scale-card__image;
+}
+
+.scale__card-body {
+    @apply scale-card__body
 }
 /* ============== Start: scale ================== */
 
@@ -203,11 +299,15 @@ body {
 .scale-card__image {
     @apply w-[450px] h-[400px] float-right mt-4;
 }
+
+.scale__button {
+    @apply button button button--bg-dark button--size-small
+}
 /* ========== End: scale-card ==================== */
 
 /* ========== start: gridient-card =============== */
 .gridient-card {
-    @apply w-full min-h-full relative mt-[2rem] bg-gradient-to-r  gradient--green-white;
+    @apply w-full min-h-full relative mt-[2rem] bg-gradient-to-r  gradient-green-white ;
 }
 
 .gradient {
@@ -225,19 +325,31 @@ body {
     @apply mx-16;
 }
 
-.user-card {
+.testimony__header {
+    @apply section-header;
+}
+
+.testimony__title {
+    @apply section-header__title;
+}
+
+.testimony__title--size-small {
+    @apply section-header__title--size-small;
+}
+
+.testimony__card {
     @apply grid grid-cols-3 gap-4 my-[8rem]
 }
 
-.card {
-    @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded-[24px] border;
-}
-
-.card__title {
+.testimony__user-title {    
     @apply text-[12px] font-normal;
 }
 
-.card__main-text {
+.testimony__user-card {
+    @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded-[24px] border;
+}
+
+.testimony__main-text {
     @apply font-medium text-[20px] text-primary-500
 }
 /* ============ end: testomny  ================= */
@@ -247,25 +359,77 @@ body {
     @apply w-full mt-[3rem];
 }
 
+.footer__header {
+    @apply bg-footerGradient py-6;
+}
+
 .footer__redirect {
     @apply grid grid-cols-4 mx-16 py-16;
 }
 
+.footer__button {
+    @apply button button--bg-dark
+}
+
 .footer__body--dark {
-    @apply bg-primary-500 text-white mt-[3rem];
+    @apply bg-primary-500 text-white ;
 }
 
 .footer__navigation {
     @apply flex flex-col gap-4;
 }
 
-.footer__links {
+.footer__item {
     @apply opacity-[0.6] text-[16px]
 }
 
 .footer__links-header {
     @apply font-semibold text-[18px] leading-[150%]
 }
+
+.footer__main-header {
+    @apply section-header gap-4;
+}
+
+.footer__title {
+    @apply section-header__title text-[56px] leading-[61.6px]
+}
+
+.footer__text {
+    @apply font-normal text-[18px] leading-[27px] w-full;
+}
+
+.footer__copylight {
+    @apply copylight
+}
+
+.footer__line {
+    @apply line;
+}
+
+.header__input-group {
+    @apply input-group;
+}
+
+.header__input {
+    @apply input;
+}
+
+.header__button {
+    @apply button button--bg-dark;
+}
+ 
+.input-group--size-small {
+     @apply w-[300px]
+}
+ 
+ .button--bg-default {
+     @apply bg-transparent
+ }
+ 
+ .input {
+     @apply placeholder:text-[#1D2130] outline-none placeholder:opacity-[0.4] placeholder:text-[16px];
+ }
 
 /* ============== end: footer ================== */
 
@@ -290,7 +454,6 @@ body {
 
 /* ================== project page  ========== */
 
-
 .round-right-top {
     border-top-right-radius: 30px;
 }
@@ -299,4 +462,14 @@ body {
     @apply mt-[5rem] bg-white grid grid-cols-3 gap-9 p-12 w-[90%] round-right-top;
 }
 
+/* ================ pricing =================== */
+
+.pricing {
+    @apply grid grid-cols-3 gap-5 p-16 ;
+}
+
+
+.question {
+    @apply bg-main m-16 p-9 rounded-[24px] grid grid-cols-2 gap-2;
+}
 

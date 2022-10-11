@@ -11,7 +11,11 @@ module.exports = {
           "500": "#1D2130"
         },
         "light-violet": "#E0E4FC",
-        "light-pink": "rgba(215, 152, 225, 0.15)"
+        "light-pink": "rgba(215, 152, 225, 0.15)",
+        "main" : "#F0F2FE"
+      },
+      backgroundImage: {
+        footerGradient: "url('../assets/image/gradient-footer.png')"
       }
     },
   },
