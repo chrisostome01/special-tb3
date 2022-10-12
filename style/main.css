@@ -70,7 +70,7 @@
         @apply bg-headerDescriptionGradient pb-6
     }
 
-    .header__links {
+    .header__nav {
         @apply flex justify-between bg-white;
     }
 
@@ -256,7 +256,7 @@
         @apply quality__icon;
     }
 
-    .solition__quality-title {
+    .solution__quality-title {
         @apply quality__title;
     }
 
@@ -530,7 +530,7 @@
         @apply flex mx-16 py-4;
     }
 
-    .social-links {
+    .footer__icon {
         @apply flex gap-2 px-3 justify-between
     }
 

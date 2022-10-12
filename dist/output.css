@@ -851,7 +851,7 @@ body {
   padding-bottom: 1.5rem;
 }
 
-.header__links {
+.header__nav {
   display: flex;
   justify-content: space-between;
   --tw-bg-opacity: 1;
@@ -1202,7 +1202,7 @@ body {
   width: 48px;
 }
 
-.solition__quality-title {
+.solution__quality-title {
   font-size: 32px;
   font-weight: 700;
   line-height: 38.4px;
@@ -1668,7 +1668,7 @@ body {
   padding-bottom: 1rem;
 }
 
-.social-links {
+.footer__icon {
   display: flex;
   justify-content: space-between;
   gap: 0.5rem;
