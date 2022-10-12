@@ -32,6 +32,14 @@
         text-fill-color: transparent;
     }
 
+    /* blur */
+    .blur-big {
+        @apply blur-[12.5rem]
+    }
+    .blur-small {
+        @apply blur-[5.8rem]
+    }
+
 
     /* gradient */
     .gradient-green-white {
@@ -107,9 +115,7 @@
     }
 
     .header__gradient {
-        background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #9bffa573 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-        filter: blur(200px);
-        @apply  rounded-full w-[524px] h-[496px] absolute -z-30 left-9 top-11
+        @apply  rounded-full w-[32.75rem] h-[31rem] absolute -z-30 left-9 top-11 bg-gradientGreenBlue blur-big
     }
 
     .header__navigation {
@@ -134,15 +140,15 @@
     }
 
     .button--bg-dark {
-        @apply bg-primary-500 text-white rounded-[12px]
+        @apply bg-primary-500 text-white rounded-[0.75rem]
     }
 
     .button--outline-dark {
-        @apply rounded-[12px] border;
+        @apply rounded-[0.75rem] border;
     }
 
     .button--size-small {
-        @apply w-[200px]
+        @apply w-[12rem]
     }
     /* ================= End: Button =============== */
 
@@ -156,7 +162,7 @@
     }
 
     .section-header__text {
-        @apply font-normal text-size-large leading-[27px] w-full;
+        @apply font-normal text-size-large leading-[1.688rem] w-full;
     }
 
     .section-header__higlight {
@@ -164,11 +170,11 @@
     }
 
     .section-header__title--size-large {
-        @apply text-size-xlarge leading-[61.6px]
+        @apply text-size-xlarge leading-[3.85rem]
     }
 
     .section-header__title--size-small {
-        @apply text-size-3large  leading-[57.6px]
+        @apply text-size-3large  leading-[3.6rem]
     }
 
     .section-header--posistion-left {
@@ -182,7 +188,7 @@
 
     /* =========== Start: inputs ==================== */
     .input-group {
-    @apply bg-white py-2 pl-6 rounded-[12px] flex justify-between w-[600px]    
+    @apply bg-white py-2 pl-6 rounded-[0.75rem] flex justify-between w-[37rem]    
     }
 
     .input-group--bg-gray {
@@ -190,7 +196,7 @@
     }
 
     .input-group--size-small {
-        @apply w-[300px]
+        @apply w-[19rem]
     }
 
     .button--bg-default {
@@ -233,7 +239,7 @@
     }
 
     .solution__container {
-        @apply p-9 rounded-[24px] mt-6 grid grid-cols-3 ;
+        @apply p-9 rounded-[1.5rem] mt-6 grid grid-cols-3 ;
     }
 
     .solution__title {
@@ -276,11 +282,11 @@
     }
 
     .quality__icon {
-        @apply w-[48px] h-[48px]
+        @apply w-[3rem] h-[3rem]
     }
 
     .quality__title {
-        @apply text-[32px] font-bold text-primary-500 leading-[38.4px];
+        @apply text-[2rem] font-bold text-primary-500 leading-[2.1rem];
     }
 
     .quality--middle {
@@ -338,7 +344,7 @@
     }
 
     .scale__card-image {
-        @apply scale-;
+        @apply scale-card__image;
     }
 
     .scale__card-body {
@@ -357,7 +363,7 @@
     }
 
     .scale-card__title {
-        @apply text-primary-500 text-size-2large leading-[33.6px] font-bold
+        @apply text-primary-500 text-size-2large leading-[2.3rem] font-bold
     }
 
     .scale-card__body {
@@ -382,9 +388,8 @@
         @apply w-full min-h-full relative mt-[2rem] bg-gradient-to-r  gradient-green-white ;
     }
 
-    .gradient {
-        background: radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%);
-        filter: blur(98px);
+    .gradient { 
+        @apply gradientGreenBlueSm blur-small
     }
 
     .gridient-card__gradient {
@@ -418,7 +423,7 @@
     }
 
     .testimony__user-card {
-        @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded-[24px] border;
+        @apply flex items-center justify-center p-5 text-center flex-col gap-4 rounded-[1.5rem] border;
     }
 
     .testimony__main-text {
@@ -464,11 +469,11 @@
     }
 
     .footer__title {
-        @apply section-header__title text-size-xlarge leading-[61.6px]
+        @apply section-header__title text-size-xlarge leading-[3.85rem]
     }
 
     .footer__text {
-        @apply font-normal text-size-large leading-[27px] w-full;
+        @apply font-normal text-size-large leading-[1.688rem] w-full;
     }
 
     .footer__copylight {
@@ -492,7 +497,7 @@
     }
 
     .button--bg-dark {
-        @apply bg-primary-500 text-white rounded-[12px]
+        @apply bg-primary-500 text-white rounded-[0.75rem]
     }
 
     .button--size-small {
@@ -512,7 +517,7 @@
     }
     
     .input-group--size-small {
-        @apply w-[300px]
+        @apply w-[19rem]
     }
     
     .button--bg-default {
@@ -614,7 +619,7 @@
 
 
     .question {
-        @apply bg-main m-16 p-9 rounded-[24px] grid grid-cols-2 gap-2;
+        @apply bg-main m-16 p-9 rounded-[1.5rem] grid grid-cols-2 gap-2;
     }
 
     .header__grid {

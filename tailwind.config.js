@@ -20,6 +20,10 @@ module.exports = {
         footerGradient: "url('../assets/image/gradient-footer.png')",
         headerDescriptionGradient: "url('../assets/svgs/aboutus-gradient.svg')"
       },
+      backgroundColor: {
+        gradientGreenBlue: 'radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)',
+        gradientGreenBlueSm: "radial-gradient(483.9% 2719.65% at -49.5% -250%, #D798E1 17.55%, #9BFFA5 27.56%, #AED3FF 49.89%, #C9D4EF 56.53%, #CACFFA 65.69%)"
+      },
       fontSize: {
         "size-small": "12px",
         "size-medium": "16px",
